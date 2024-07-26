@@ -32,7 +32,7 @@ h6 {
 
 p {
     font-size: 1rem;
-    color: #465b52;
+    color: #494949;
     margin: 15px 0 20px 0;
 }
 
@@ -48,7 +48,7 @@ body {
     width: 100%;
 }
 
-/* header starts */
+/* NAVIGATION STARTS */
 
 #header {
     display: flex;
@@ -57,6 +57,10 @@ body {
     padding: 20px 80px;
     background-color: #E3E6F3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #navbar {
@@ -94,4 +98,39 @@ body {
     position: absolute;
     bottom: -4px;
     left: 20px;  
+}
+
+/* HERO SECTION */
+
+#hero {
+    background-image: url("img/hero4.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0  80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: #088178;
+}
+
+#hero button {
+    /* background-image: url("img/button.png"); */
+    background-color: #da1515;
+    border: 0;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 15px 80px ; 
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem; 
 }
