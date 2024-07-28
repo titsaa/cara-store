@@ -37,7 +37,7 @@ p {
 }
 
 .section-p1 {
-    padding: 40px 80px;
+    padding: 40px ;
 }
 
 .section-m1 {
@@ -55,10 +55,12 @@ button.normal {
     outline: none;
     border: none;
     transition: .2s ease;
+
 }
 
 body {
     width: 100%;
+    overflow-x: hidden;
 }
 
 /* NAVIGATION STARTS */
@@ -116,7 +118,7 @@ body {
 /* HERO SECTION */
 
 #hero {
-    background-image: url("img/hero4.jpg");
+    background-image: url("img/hero4.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -324,3 +326,109 @@ body {
     background: #088178;
     color: #fff;
  }
+
+ /* SMALL BANNER */
+#sm-banner {
+    display: flex;
+    margin: 0 80px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("img/banner/b17.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;    
+}
+
+#sm-banner .banner-box h4 {
+    color: #3f3f3f;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner .banner-box h2 {
+    font-weight: 800;
+}
+
+#sm-banner span {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .sm-banner-btn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid black;
+    transition: .2s ease;
+}
+
+#sm-banner .banner-box:hover button {
+    color: white;
+    background-color: #088178;
+    border: 2px solid #088178;
+}
+
+#sm-banner .banner-box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(img/banner/b10.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;  
+}
+
+#sm-banner .banner-box2 h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner .banner-box2 h2 {
+    font-weight: 800;
+    color: #fff;
+}
+
+#sm-banner .banner-box2 span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box2 button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #fff;
+    transition: .2s ease;
+}
+
+#sm-banner .banner-box2:hover button {
+    color: white;
+    background-color: #088178;
+    border: 2px solid #088178;
+}
