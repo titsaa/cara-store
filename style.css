@@ -394,6 +394,7 @@ body {
     background-size: cover;
     background-position: center;
     padding: 30px;  
+     
 }
 
 #sm-banner .banner-box2 h4 {
@@ -431,4 +432,45 @@ body {
     color: white;
     background-color: #088178;
     border: 2px solid #088178;
+}
+
+/* CARDS SECTION */
+#banner3 {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    padding: 0 120px;  
+}
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(img/banner/b7.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-box3 {
+    background-image: url(img/banner/b4.jpg);
+}
+#banner3 .banner-box4 {
+    background-image: url(img/banner/b18.jpg);
+}
+
+#banner3 h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+#banner3 h3 {
+    color: #05ecdd;
+    font-size: 1rem;
+    font-weight: 800;
+
 }
