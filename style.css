@@ -69,7 +69,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 20px 40px;
     background-color: #E3E6F3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
@@ -139,15 +139,26 @@ body {
 }
 
 #hero button {
-    /* background-image: url("img/button.png"); */
-    background-color: #da1515;
-    border: 0;
-    border-radius: 10px;
-    color: #ffffff;
+   
+    border: 1px solid #088178;
+    border-radius: 50px;
+    background-color: #088178;
+    color: #fff;
     padding: 15px 80px ; 
     cursor: pointer;
     font-weight: 700;
-    font-size: 1rem; 
+    font-size: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)
+}
+
+#hero button:hover {
+    color: #088178;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+    background-image: url("img/button.png");
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
 }
 
 /* FEATURE SECTION */
@@ -593,3 +604,4 @@ footer .copyright {
     width: 100%;
     text-align: center;
 }
+
