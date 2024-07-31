@@ -616,7 +616,103 @@ footer .copyright {
 }
 
 
+/* **** SHOP PAGE **** */
+
+/* NAVIGATION */
+#page-header {
+    background-image: url('img/banner/b1.jpg');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2, #page-header p {
+    color: #fff;
+}
+
+/* PAGINATION */
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: #088178;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+/*  **** SINGLE PRODUCT PAGE **** */
+
+#prodetails .single-pro-image {
+    width: 25%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+} 
+
+#prodetails .single-pro-details {
+    width: 50%;
+    padding: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus {
+    outline: none;
+}
+
+#prodetails .single-pro-details button {
+    background-color: #088178;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span {
+    line-height: 25px;
+}
+
+
 /* RESPONSIVE MEDIA QUERIES */
+
+/* MEDIUM SCREENS */
 @media (max-width: 799px) {
     #section-p1 {
         padding: 40px;
@@ -721,6 +817,7 @@ footer .copyright {
 }
 }
 
+/* SMALL SCREENS */
 @media (max-width: 477px) {
     #header {
         padding: 10px 30px;
@@ -783,5 +880,19 @@ footer .copyright {
 
     fototer .copyright {
         text-align: start;
+    }
+
+    /* single prodict page */
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetails .single-pro-image {
+        width: 100%;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
     }
 }
