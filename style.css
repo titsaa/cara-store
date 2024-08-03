@@ -817,6 +817,115 @@ footer .copyright {
     border-radius: 20px;
 }
 
+/* CONTACT PAGE */
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contact-details .details {
+    width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span {
+    font-size: 12px;
+}
+#contact-details .details h2, 
+#form-details form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px  0;
+}
+#contact-details .details h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i {
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map {
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+
+}
+
+#form-details form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input, 
+#form-details form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form button {
+    background-color: #088178;
+    color: #fff;
+}
+
+#form-details .people div {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-details .people img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#form-details .people  p {
+    margin: 0;
+    line-height: 25px;
+    font-size: 13px;
+}
+
+#form-details .people span {
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+}
+
+
+
+
 
 
 /****** RESPONSIVE MEDIA QUERIES ******/
@@ -874,7 +983,6 @@ footer .copyright {
         display: none;
     }
 
-
     /* hero section */
     #hero {
         height: 70vh;
@@ -906,11 +1014,10 @@ footer .copyright {
         min-width: 100%;
         height: 30vh;
     }
-
+    
     #banner3 .banner-box {
         width: 28%;  
     }
-
 
     #banner3 .banner-box h2 {
         font-size: 1.5rem;
@@ -920,13 +1027,34 @@ footer .copyright {
         font-size: 1rem;
     }
 
-
 #newsletter .form {
     width: 70%;
 }
+
+/* Contact page */
+#page-header {
+    height: 30vh;
+}
+#form-details {
+    margin: 30px;
+    padding: 40px;
+}
+#form-details form {
+    width: 55%;
+}
+#newsletter {
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    justify-content: center;
+}
+#newsletter h4 {
+    text-align: center;
 }
 
-/* SMALL SCREENS */
+}
+
+/******* SMALL SCREENS *******/
 @media (max-width: 477px) {
     #header {
         padding: 10px 30px;
@@ -1047,5 +1175,66 @@ footer .copyright {
 
     #about-app .video {
         width: 100%;
+    }
+
+    /* contact page  */
+    #page-header {
+        height: 20%;
+    }
+
+    #contact-details {
+        flex-direction: column;
+    }
+
+    #contact-details .details, 
+    #contact-details .details h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    #contact-details .details h3 {
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+
+    #contact-details .details i {
+        margin-left: 40px;
+    }
+
+    #contact-details .map {
+        width: 100%;
+        height: 300px;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+
+    #form-details {
+        flex-direction: column;
+        margin: 25px;
+        padding: 20px;
+    }
+
+    #form-details form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    #contact-details .details h2, #form-details form h2 {
+        font-size: 20px;
+    }
+    #form-details form button {
+        width: 100%;
+    }
+
+    #contact-details form button:hover {
+        background-color: rgb(1, 108, 108)178;
+    }
+
+    #newsletter {
+        width: 100vw;
+        margin: 0;
     }
 }
